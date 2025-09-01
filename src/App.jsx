@@ -27,12 +27,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-pink-400 via-pink-300 to-blue-300 relative">
-      <button
-        onClick={handleLogout}
-        className="absolute top-4 right-4 px-3 py-1 bg-red-500 text-white rounded z-50"
-      >
-        Logout
-      </button>
       {user === "Alfred" && <MyDashboard />}
       {user === "Eden" && <HerDashboard />}
     </div>

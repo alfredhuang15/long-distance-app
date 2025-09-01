@@ -5,6 +5,7 @@ import DuckyPhotoWidget from "./DuckyPhotoWidget";
 import bf_thumbs from "./assets/alfred_thumbs.png";
 import QuoteWidget from "./QuoteWidget";
 import EnvelopeWidget from "./EnvelopeWidget";
+import eden_tongue from "./assets/eden_tongue.png";
 
 export default function HerDashboard() {
   return (
@@ -35,7 +36,14 @@ export default function HerDashboard() {
          <div>
           <QuoteWidget user="Eden" target="Alfred" />
          </div>
-         <EnvelopeWidget editable={false} />
+         <div className="relative">
+          <EnvelopeWidget editable={false} />
+          <img
+          src={eden_tongue}
+          alt="Sticker"
+          className="absolute bottom-0 left-50 w-35 h-35 translate-x-30 translate-y-24 z-25"
+        />
+         </div>
 
       </div>
     </div>

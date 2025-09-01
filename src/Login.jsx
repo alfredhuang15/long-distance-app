@@ -1,7 +1,8 @@
 export default function Login({ onLogin }) {
   return (
     <div className="flex flex-col items-center justify-center text-center space-y-6">
-      <h1 className="text-3xl font-bold">Who are you?</h1>
+      <h1 className="text-3xl font-bold">Hi Welcome to my long distance app I made just for you!</h1>
+      <h1 className="text-3xl font-bold">Please pick Eden!</h1>
 
       <button
         onClick={() => onLogin("Alfred")}
