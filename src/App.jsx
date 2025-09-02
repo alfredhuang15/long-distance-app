@@ -2,9 +2,14 @@ import { useState, useEffect } from "react";
 import Login from "./Login";
 import MyDashboard from "./MyDashboard";
 import HerDashboard from "./HerDashboard";
+import { auth } from "./firebase";
+import { signInAnonymously } from "firebase/auth";
 
 
 export default function App() {
+  useEffect(() => {
+  signInAnonymously(auth).catch(console.error);
+  }, []);
   const [user, setUser] = useState(() => localStorage.getItem("user"));
 
   const handleLogin = (selectedUser) => {

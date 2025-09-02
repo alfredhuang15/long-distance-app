@@ -131,12 +131,6 @@ export default function SleepTimeInput({ user }) {
           Save
         </button>
       </form>
-
-      {status && (
-        <p className="w-full max-w-sm sm:max-w-md mt-2 text-sm text-pink-400 text-center">
-          {status}
-        </p>
-      )}
     </div>
   );
 }
