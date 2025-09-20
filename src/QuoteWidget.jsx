@@ -50,7 +50,7 @@ export default function QuoteWidget({ user, target }) {
   };
 
   return (
-    <div className="bg-pink-50 p-5 rounded-xl border-4 border-pink-300 shadow-2xl w-full max-w-4xl mx-auto relative">
+    <div className="bg-pink-50 p-5 rounded-xl border-4 border-pink-300 w-full max-w-4xl mx-auto relative">
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-center">Quote of the Day</h2>
       </div>

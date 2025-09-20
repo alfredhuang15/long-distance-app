@@ -2,6 +2,7 @@ import QuoteWidget from "./QuoteWidget";
 import DuckyPhotoWidget from "./DuckyPhotoWidget";
 import SleepWidget from "./SleepWidget";
 import EnvelopeWidget from "./EnvelopeWidget";
+import CountdownWidget from "./Countdown";
 
 export default function MyDashboard() {
   return (
@@ -12,6 +13,10 @@ export default function MyDashboard() {
       <div className="w-full md:w-1/2">
         <DuckyPhotoWidget user="Alfred" />
         <QuoteWidget user="Alfred" target="Eden" />
+        <CountdownWidget
+            targetDate="2025-10-02T16:00:00"
+            message="I'm Here! 🎉"
+          />
       </div>
       <EnvelopeWidget editable={true} />
 

@@ -6,6 +6,7 @@ import bf_thumbs from "./assets/alfred_thumbs.png";
 import QuoteWidget from "./QuoteWidget";
 import EnvelopeWidget from "./EnvelopeWidget";
 import eden_tongue from "./assets/eden_tongue.png";
+import CountdownWidget from "./Countdown";
 
 export default function HerDashboard() {
   return (
@@ -19,12 +20,12 @@ export default function HerDashboard() {
           <img
           src={bf_heart}
           alt="Sticker"
-          className="absolute bottom-0 left-0 w-35 h-35 -translate-x-8 translate-y-6 -rotate-12"
+          className="absolute bottom-0 left-0 w-35 h-35 -translate-x-8 translate-y-5 -rotate-12"
         />
 
         <SleepWidget user="Eden" />
       </div>
-         <div className="w-full md:w-1/2 px-6 flex flex-col gap-6">
+         <div className="w-full md:w-1/2 flex flex-col">
          <div className="relative">
           <DuckyPhotoWidget user="Eden" />
             <img
@@ -35,13 +36,17 @@ export default function HerDashboard() {
          </div>
          <div>
           <QuoteWidget user="Eden" target="Alfred" />
+            <CountdownWidget
+            targetDate="2025-10-02T16:00:00"
+            message="I'm Here! 🎉"
+          />
          </div>
          <div className="relative">
           <EnvelopeWidget editable={false} />
           <img
           src={eden_tongue}
           alt="Sticker"
-          className="absolute bottom-0 left-50 w-35 h-35 translate-x-30 translate-y-24 z-25"
+          className="absolute bottom-0 right-0 w-35 h-35 -translate-x-5 translate-y-5 z-25"
         />
          </div>
 
